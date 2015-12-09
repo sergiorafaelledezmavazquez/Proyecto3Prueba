@@ -113,3 +113,12 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+#logo_image{
+    text-align: center;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 80%;
+    /*display: block;*/
+    
+}
