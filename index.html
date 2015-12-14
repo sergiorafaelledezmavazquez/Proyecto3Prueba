@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="css/themes/prueba2ThemeRolller.min.css" />
     <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" /> 
 	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure-1.4.5.min.css" /> 
+    
+    <script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+    
     <script src="jquery.mobile/jquery.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
     <script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
-    <body>
+    <body onload="onBodyLoad()"> 
+        
 	<div data-role="page" data-theme="b" id="principal">
 		<div data-role="header" data-position="inline">
             <h1>GUIA MODULO 1:</h1>
@@ -30,8 +35,8 @@
                 <li><a href="#pagina_unidad2">Unidad 2: Leer y escribir para aprender</a></li>
                 <li><a href="#pagina_unidad3">Unidad 3: Analizar y escribir para comunicar</a></li>
             </ul>
-            
-            <input type="image" value="imagen" src="res/imagenes/portadaModulo1.png"/>
+           <!-- <input type="image" value="imagen" src="res/imagenes/portadaModulo1.png"/> -->
+           <div data-role="content" id="resultado">Test 1.0</div>
         </div>
         <div data-role="footer">
             <h4>Guias HKS</h4>
