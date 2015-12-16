@@ -4,6 +4,7 @@ function onDeviceReady() {
     alert('Funciono');
     $("#resultado").html("PhoneGap esta funcionando");
     window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "index.html", gotFile, fail); 
+    alert(cordova.file.applicationDirectory);
 }
 
 function gotFile(fileEntry){
