@@ -3,7 +3,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     alert('Funciono');
     $("#resultado").html("PhoneGap esta funcionando");
-    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "res/imagenes/jquery-logo.png", gotFile, fail); 
+    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "index.html", gotFile, fail); 
 }
 
 function gotFile(fileEntry){
@@ -13,7 +13,7 @@ function gotFile(fileEntry){
 		reader.onloadend = function(e) {
 			//console.log("Text is: "+this.result);
 			//document.querySelector("#textArea").innerHTML = this.result;
-            $('#logo').attr('src', this.result);
+            //$('#logo').attr('src', this.result);
 		}
 		//reader.readAsText(file);
 	});
