@@ -19,7 +19,7 @@ function gotFile(fileEntry){
 	});
 }
 function fail(e) {
-   console.log("FileSystem Error");
-   alert("FileSystem Error");
-   console.dir(e);
+   //console.log("FileSystem Error");
+   alert(e);
+   //console.dir(e);
 }
