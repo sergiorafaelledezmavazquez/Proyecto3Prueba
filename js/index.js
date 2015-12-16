@@ -16,7 +16,8 @@ function gotFile(fileEntry){
 		reader.onloadend = function(e) {
 			console.log("Text is: "+this.result);
 			//document.querySelector("#textArea").innerHTML = this.result;
-            $('#employeePic').attr('src', this.result);
+            $('#logo').attr('src', this.result);
+           
 		}
 		reader.readAsText(file);
 	});
