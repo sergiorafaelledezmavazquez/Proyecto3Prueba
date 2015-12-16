@@ -20,6 +20,6 @@ function gotFile(fileEntry){
 }
 function fail(e) {
    //console.log("FileSystem Error");
-   alert(e);
+   alert(e.code);
    //console.dir(e);
 }
