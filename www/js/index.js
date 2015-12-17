@@ -1,12 +1,51 @@
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    alert('Funciono');
+//Arreglando el formato del video
+    // Find all YouTube & Vimeo videos
+var $allVideos = $("video");
+
+// The element that is fluid width
+$fluidEl = $(".ui-content");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+$(this)
+.data('aspectRatio', this.height / this.width)
+
+// and remove the hard coded width/height
+.removeAttr('height')
+.removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+var newWidth = $fluidEl.width();
+
+// Resize all videos according to their own aspect ratio
+$allVideos.each(function() {
+
+var $el = $(this);
+$el
+.width(newWidth)
+.height(newWidth * $el.data('aspectRatio'));
+
+});
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+    
+  //-------------------------------------------------
+    //alert('Funciono');
     $("#resultado").html("PhoneGap esta funcionando");
+  //-------------------------------------------------
     //window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "index.html", gotFile, fail); 
     //alert(cordova.file.applicationDirectory);
-    window.resolveLocalFileSystemURL(cordova.file.dataDirectory + "index.html", gotFile, fail);
-    alert(cordova.file.dataDirectory);
+    //window.resolveLocalFileSystemURL(cordova.file.dataDirectory + "index.html", gotFile, fail);
+    //alert(cordova.file.dataDirectory);
 }
 
 function gotFile(fileEntry){
