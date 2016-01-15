@@ -2,23 +2,20 @@
 //para filtrarlas y programar su JQUERY deacuerdo a su tipo
     $(document).ready(function(){
         //tipo de pregunta de una sola opcion con option button (ejemplo pregunta 1 o pregunta18)
-        $("fieldset.jq_tipo1" + " .jq_correcta").click(function(event){ 
-			
+        $("fieldset.select_tipo1" + " .select_correcta").click(function(event){ 
             //0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
             //0.1 Obtener todos los imagenes de los label de esa pregunta para quitarlas 
                 //0.1.1 obtener el id del padre apartir del id del hijo    
                 var hijo = $element.attr('id');
-                var idpadre = hijo.substring(0,8);
-			    //alert("fieldset#"+ idpadre + " label img");
+                var idpadre = hijo.substring(0,5);
                 //0.0.2 remuevo 
             $("fieldset#"+ idpadre + " label img").remove();
             
             //1 obtengo el label
             var $label = $("label[for='"+$element.attr('id')+"']");
             //2 obtengo el texto del label
-             var texto = $label.text(); 
-			
+             var texto = $label.text();          
             //2.1 leer un atributo
                 /*
                 var x =  $element.attr('id');
@@ -31,19 +28,17 @@
                 */          
             //3 inserto la imagen en el label (el id del labeles el mismo que el input)
                 $("." + event.target.id).empty().html(texto + '<img src="img/palomita.png" class="bien">');                     
-                 
+               
         });
         
-        $("fieldset.jq_tipo1" + " .jq_incorrecta").click(function(event){
-		
+        $("fieldset.select_tipo1" + " .select_incorrecta").click(function(event){        
             //0.0 obtengo elelemento al que se hizo clic 
-             var $element = $(this);
+            $element = $(this);
             //0.1 Obtener todos los imagenes de los label de esa pregunta para quitarlas 
                 //0.1.1 obtener el id del padre apartir del id del hijo    
                 var hijo = $element.attr('id');
-                var idpadre = hijo.substring(0,8);
+                var idpadre = hijo.substring(0,5);
                 //0.0.2 remuevo 
-			//alert("fieldset#"+ idpadre + " label img");
             $("fieldset#"+ idpadre + " label img").remove();             
             //1 obtengo el label
             var $label = $("label[for='"+$element.attr('id')+"']");
@@ -54,13 +49,13 @@
                 $("." + event.target.id).empty().html(texto + '<img src="img/tache.png" class="mal">');   
         });
         //tipo de pregunta de opcion multiple con checkbox (ejemplo pregunta 5)
-        $("fieldset.jq_tipo2" + " .jq_correcta").click(function(event){ 
+        $("fieldset.select_tipo2" + " .select_correcta").click(function(event){ 
             //0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
             //0.1 Obtener todos los imagenes de los label de esa pregunta para quitarlas 
                 //0.1.1 obtener el id del padre apartir del id del hijo    
                 var hijo = $element.attr('id');
-                var idpadre = hijo.substring(0,8);           
+                var idpadre = hijo.substring(0,5);           
             //1 obtengo el label
             var $label = $("label[for='"+$element.attr('id')+"']");
             //2 obtengo el texto del label
@@ -76,13 +71,13 @@
                }
         });
         
-        $("fieldset.jq_tipo2" + " .jq_incorrecta").click(function(event){ 
+        $("fieldset.select_tipo2" + " .select_incorrecta").click(function(event){ 
             //0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
             //0.1 Obtener todos los imagenes de los label de esa pregunta para quitarlas 
                 //0.1.1 obtener el id del padre apartir del id del hijo    
                 var hijo = $element.attr('id');
-                var idpadre = hijo.substring(0,8);         
+                var idpadre = hijo.substring(0,5);         
             //1 obtengo el label
             var $label = $("label[for='"+$element.attr('id')+"']");
             //2 obtengo el texto del label
@@ -99,21 +94,21 @@
         });
     
         //tipo de pregunta de una sola opcion con menu desplegable (ejemplo pregunta )
-      $("fieldset.jq_tipo3" + " select ").change(function(event){ 
+      $("fieldset.select_tipo3" + " select ").change(function(event){ 
             //0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
                 //alert("valor: "+$element.val());
                 //alert("id: "+$element.attr('id'));
-                //var opcion_seleccionada = $("select.jq_"+$element.attr('id')+" option:selected").text();
+                //var opcion_seleccionada = $("select.select_"+$element.attr('id')+" option:selected").text();
                 //alert("texto selecionado: " + opcion_seleccionada);
                  var valor =$element.val();
-                 var parrafo =$("#"+ $element.attr('id') +" p.jq_p_"+  $element.attr('id'));
+                 var parrafo =$("#"+ $element.attr('id') +" p.select_p_"+  $element.attr('id'));
                  var texto = parrafo.text(); 
                  if(valor==1){
-                    parrafo.empty().html(texto+'<br>'+'<div align="center"><img src="img/palomita.png" class="bien"></div>');
+                    parrafo.empty().html('<div align="center"><img src="img/palomita.png" class="bien"></div>' +'<br>'+texto);
                 }
                  if(valor==0){
-                     parrafo.empty().html(texto+'<br>'+'<div align="center"><img src="img/tache.png" class="mal"></div>'); 
+                     parrafo.empty().html('<div align="center"><img src="img/tache.png" class="mal"></div>' +'<br>'+texto); 
                  }
                   
 
