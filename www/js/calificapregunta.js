@@ -98,7 +98,7 @@
                }
         });
     
-        //tipo de pregunta de una sola opcion con menu desplegable (ejemplo pregunta )
+        //tipo de pregunta de una sola opcion con menu desplegable (ejemplo pregunta 24)
       $("fieldset.jq_tipo3" + " select ").change(function(event){ 
             //0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
@@ -114,9 +114,33 @@
                 }
                  if(valor==0){
                      parrafo.empty().html(texto+'<br>'+'<div align="center"><img src="img/tache.png" class="mal"></div>'); 
-                 }
-                  
-
-           
+                 }         
+         });
+		//tipo de pregunta donde se tienen ordenar los elementos con menu desplegable (ejemplo pregunta 41)
+		 
+		 $("fieldset.jq_tipo4" + " select ").change(function(event){ 
+            
+			//0.0 obtengo elelemento al que se hizo clic 
+            $element = $(this);
+                //alert("valor: "+$element.val());
+                //alert("id: "+$element.attr('id'));
+                //var opcion_seleccionada = $("select.jq_"+$element.attr('id')+" option:selected").text();
+                //alert("texto selecionado: " + opcion_seleccionada);
+             alert("hola");    
+			 var valor =$element.val();
+			 var idhijo = $element.attr('class');
+			 alert("idhijo: " + idhijo);
+             var idpadre = idhijo.substring(0,8);
+			 alert("idpadre: "+ idpadre);
+			 alert("#"+idpadre +" div p.jq_p_"+ idhijo);
+                 var parrafo =$("#"+idpadre +" div div.jq_p_"+ idhijo);
+                 var texto = parrafo.text(); 
+                 if(valor==1){ 
+                    parrafo.empty().html(texto + '<img src="img/palomita.png" class="bien">');
+					 
+                }
+                 if(valor==0){				
+                    parrafo.empty().html(texto + '<img src="img/tache.png" class="mal">'); 
+                 }           
          });
 });
