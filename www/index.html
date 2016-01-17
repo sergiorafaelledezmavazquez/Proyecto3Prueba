@@ -14,7 +14,7 @@
         <script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
 </head>    
 <body> 
-<!-- pagina1-->     
+<!-- pagina1------------------------------------------------------------------------------------------------------------->     
     <div data-role="page" class="jqm-demos" id="panel-fixed-page1" data-title="Panel fixed positioning" data-url="panel-fixed-page1">
         <div data-role="header" data-position="fixed">
             <h1>MODULO 1</h1>
@@ -55,7 +55,7 @@
         </div>
         <!--/panel-->  
     </div><!-- /pagina1--> 
-<!-- pagina2-->     
+<!-- pagina2------------------------------------------------------------------------------------------------------------->     
     <div data-role="page" class="jqm-demos" id="panel-fixed-page2" data-title="Panel fixed positioning" data-url="panel-fixed-page2">
         <div data-role="header" data-position="fixed">
             
@@ -176,7 +176,7 @@
         </div>
         <!--/panel-->  
     </div><!-- /pagina2--> 
-<!-- pagina3-->     
+<!-- pagina3------------------------------------------------------------------------------------------------------------->     
     <div data-role="page" class="jqm-demos" id="panel-fixed-page3" data-title="Panel fixed positioning" data-url="panel-fixed-page3">
         <div data-role="header" data-position="fixed">
             <h1>UNIDAD 2</h1>
@@ -268,7 +268,7 @@
         </div>
         <!--/panel-->  
     </div><!-- /pagina3-->     
-<!-- pagina4-->     
+<!-- pagina4------------------------------------------------------------------------------------------------------------->     
     <div data-role="page" class="jqm-demos" id="panel-fixed-page4" data-title="Panel fixed positioning" data-url="panel-fixed-page4">
         <div data-role="header" data-position="fixed">
             <h1>UNIDAD 3</h1>
@@ -395,7 +395,7 @@
         </div>
         <!--/panel-->  
     </div><!-- /pagina4-->  
-<!-- pagina5-->     
+<!-- pagina5------------------------------------------------------------------------------------------------------------->     
     <div data-role="page" class="jqm-demos" id="panel-fixed-page5" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
         <div data-role="header" data-position="fixed">
             <h1>EXAMEN GLOBAL</h1>
@@ -407,12 +407,17 @@
                 <p style="text-align: center;">Este test es solo de preparación y su califiación no tiene validez oficial</p>
                 <form>
                 <h3 style="text-align: center;">UNIDAD 1</h3>    
-                <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
-                        <h3>TEMA: NECESIDADES, METAS, TOMA DE DECISIONES</h3>
-                    </div>
-                    <div class="ui-body ui-body-a">
+                <!--
+					<div data-role="collapsible">
+    				<h4>Heading</h4>
+    				<p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+				    </div>
+				<!--TEMA-->	
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
+                        <h3 class="jq_tema1_titulo">TEMA: NECESIDADES, METAS, TOMA DE DECISIONES</h3>
+                    <!--</div>-->
+                    <div id="tema1" class="ui-body ui-body-a">
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
 						 <!--   -->
 						 <fieldset data-role="controlgroup" id="preg0001" class="jq_tipo1">
@@ -432,7 +437,8 @@
 </legend>
                                 <input type="radio" name="pregunta0002" id="preg0002-opcion-a" value="0" class="jq_incorrecta jq_pregunta0002">
 							    <label for="preg0002-opcion-a" class="preg0002-opcion-a">Votación</label>
-                                <input type="radio" name="pregunta0002" id="preg0002-opcion-b" value="1" class="jq_correcta jq_pregunta0002">
+                                
+							    <input type="radio" name="pregunta0002" id="preg0002-opcion-b" value="1" class="jq_correcta jq_pregunta0002">
                                 <label for="preg0002-opcion-b"  class="preg0002-opcion-b">Toma de decisiones</label>
                                 <input type="radio" name="pregunta0002" id="preg0002-opcion-c" value="0" class="jq_incorrecta jq_pregunta0002">
                                 <label for="preg0002-opcion-c"  class="preg0002-opcion-c">Estilo de vida</label>
@@ -451,18 +457,8 @@
                                 <label for="preg0003-opcion-c" class="preg0003-opcion-c">La religión.</label>
                            </fieldset>
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
-                           <fieldset data-role="controlgroup" id="preg0004" class="jq_tipo1">
-                                <legend>¿Cuál es la razón por la que estudias el bachillerato?</legend>
-                                <!--<input type="radio" name="pregunta1" id="preg1-opcion-a" value="on" checked="checked">-->
-                                <input type="radio" name="pregunta0004" id="preg0004-opcion-a" value="0" class="jq_incorrecta jq_pregunta0004">
-                                <label for="preg0004-opcion-a" class="preg0004-opcion-a">Quiero cambiar de trabajo.</label>
-                                <input type="radio" name="pregunta0004" id="preg0004-opcion-b" value="0" class="jq_incorrecta jq_pregunta0004">
-                                <label for="preg0004-opcion-b" class="preg0004-opcion-b">Recibir un mejor sueldo.</label>
-                                <input type="radio" name="pregunta0004" id="preg0004-opcion-c" value="1" class="jq_correcta jq_pregunta0004">
-                                <label for="preg0004-opcion-c" class="preg0004-opcion-c">Ampliar mis conocimientos.</label>
-                           </fieldset>
-                           <br><hr size="3px" align="center" color="#2E9AFE"/>
-                           000<fieldset data-role="controlgroup" id="preg0005" class="jq_tipo2">
+                           <!--Se borro la 4 estaba repetida-->
+                           <fieldset data-role="controlgroup" id="preg0005" class="jq_tipo2">
                                 <legend><p style="text-align: justify;">Lee el siguiente texto, tomado del libro "Aprender a aprender" de Michel, que habla sobre el ambiente de aprendizaje y responde lo que se pide más adelante. <br>
                                     <p style="text-align: justify; border: red 5px dotted;">
                                     <i>Es imprescindible que te prepares teóricamente para analizar las decisiones que otros toman porque, tal vez hasta ahora, otros piensan por ti, ven por ti, hablan por ti y deciden por ti. Que refrenes tu impulsividad, que no te dejes llevar por la primera acción que se te ocurra, que elijas entre varias alternativas, antes de escoger un camino. Que confrontes diversos puntos de vista, pues casi siempre un observador extraño puede ser más imparcial que tú mismo.</i></p><p style="text-align: justify;">De acuerdo con el  texto anterior, ¿qué puntos debe tomar en cuenta una persona para hacer frente al medio ambiente de una manera adecuada?</p>
@@ -475,15 +471,19 @@
                                 <label for="preg0005-opcion-c" class="preg0005-opcion-c">Antes de llegar a una toma de posición crítica, a una decisión concreta, trata de leer más allá de todas las "líneas" que constituyan tu medio ambiente.</label>
                                 <input type="checkbox" name="preg0005-opcion-d" id="preg0005-opcion-d" value="0" class="jq_incorrecta jq_pregunta0005">
                                 <label for="preg0005-opcion-d" class="preg0005-opcion-d">Tu introspección debe partir de una  “observación cargada de teoría."</label>
+						         
                         </fieldset>
-                           <br><hr size="3px" align="center" color="#2E9AFE"/>
+                           <br><hr size="3px" align="center" color="#2E9AFE"/>	
+				<!--BOTON CLALIFICAR-->		  
+						<div style="text-align: center;"><a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="jq_boton_calificar ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-top ui-btn-b">Calificar</a></div>
                     </div>
+					
                 </div><!--/TEMA-->
                 <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: EL BACHILLERATO</h3>
-                    </div>
+                    <!--</div>-->
                     <!--PREGUNTAS-->
                     <div class="ui-body ui-body-a"> 
                         <br><hr size="3px" align="center" color="#2E9AFE"/> 
@@ -499,12 +499,13 @@
                            </fieldset>
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                     </div><!--/PREGUNTAS-->
+					<button class="ui-btn ui-corner-all jq_tema1">Calificar</button>
                 </div><!--/TEMA-->
                 <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: LA REFORMA INTEGRAL  DE LA EDUCACIÓN MEDIA SUPERIOR (RIEMS)</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a"><!--/PREGUNTAS-->
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                         <fieldset data-role="controlgroup" id="preg0007" class="jq_tipo1">
@@ -535,13 +536,14 @@
                                 <label for="checkbox-preg-0008e" class="checkbox-preg-0008e">Incrementar la matrícula aspirante a los estudios universitarios.                                 </label> 
                              </fieldset>
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
-                    </div><!--/PREGUNTAS--> 
+                    </div><!--/PREGUNTAS-->
+					<button class="ui-btn ui-corner-all jq_tema1">Calificar</button>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: DIFERENCIA ENTRE INFORMACIÓN Y CONOCIMIENTO</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a"><!--PREGUNTAS-->                                                
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0009" class="jq_tipo1">
@@ -737,12 +739,13 @@
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
                            
                     </div><!--/PREGUNTAS-->
+					<button class="ui-btn ui-corner-all jq_tema1">Calificar</button>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: LAS INTELIGENCIAS MULTIPLES</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a"><!--/PREGUNTAS-->
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0022" class="jq_tipo1">
@@ -831,12 +834,13 @@
                            </fieldset>
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
                     </div><!--/PREGUNTAS-->
+					<button class="ui-btn ui-corner-all jq_tema1">Calificar</button>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div  data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: ESTILOS DE APRENDIZAJE</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a"><!--preguntas-->
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0028" class="jq_tipo1">
@@ -854,12 +858,13 @@
                            </fieldset>
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
                     </div><!--/preguntas-->
+					<button class="ui-btn ui-corner-all jq_tema1">Calificar</button>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: EL ESTUDIO INDEPENDIENTE</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0029" class="jq_tipo2">
@@ -915,13 +920,14 @@ Cuando un estudiante toma la iniciativa de diagnosticar sus necesidades educativ
                                 <label for="preg0031-opcion-c" class="preg0031-opcion-c">Colaborativo</label>
                            </fieldset>
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
-                    </div>
+                    </div><!--/PREGUNTAS-->
+					<button class="ui-btn ui-corner-all jq_tema1">Calificar</button>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: ADMINISTRACIÓN DEL TIEMPO Y CONDICIONES IDEALES PARA EL ESTUDIO</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a"><!--pregunta-->
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0032" class="jq_tipo2">
@@ -991,10 +997,10 @@ Cuando un estudiante toma la iniciativa de diagnosticar sus necesidades educativ
                     </div><!--/preguntas-->
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
-                        <h3>LOS RECURSOS DIDÁCTICOS</h3>
-                    </div>
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
+                        <h3>TEMA: LOS RECURSOS DIDÁCTICOS</h3>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a"><!--preguntas-->
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                         <fieldset data-role="controlgroup" id="preg0035" class="jq_tipo3" data-type="vertical" data-mini="true">
@@ -1044,13 +1050,11 @@ Cuando un estudiante toma la iniciativa de diagnosticar sus necesidades educativ
                                 
                             
                         </fieldset>
-					<!-------------------------------------------------	
-						
-                        <br><hr size="3px" align="center" color="#2E9AFE"/>
-                    </div><!--/preguntas-->
-                </div><!--/TEMA-->
+					
+                </div><!--/preguntas-->
+				</div><!--/TEMA -->	
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
                     <div class="ui-bar ui-bar-a">
                         <h3>TEMA: EL EQUIPO DE CÓMPUTO COMO UN RECURSO DE APRENDIZAJE</h3>
                     </div>
@@ -1265,9 +1269,7 @@ son todas las partes tangibles del mismo; estos componentes se dividen en_______
                                     <option value="0" class="jq_incorrecta jq_pregunta0052">3.Transferencia de datos</option>
                                     <option value="0" class="jq_incorrecta jq_pregunta0052">4.Control</option>
                                </select>
-                            </fieldset> 
-					<!-------------------------------------------------------------------->
-					
+                            </fieldset> 		
 					
                             <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0053" class="jq_tipo4">
@@ -1315,10 +1317,10 @@ son todas las partes tangibles del mismo; estos componentes se dividen en_______
                 </div><!--/TEMA-->
                 <h3 style="text-align: center;">UNIDAD 2</h3> 
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA: TIPOS TEXTUALES Y SUS CARACTERÍSTICAS</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a"><!--PREGUNTAS-->
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                             <fieldset data-role="controlgroup" id="preg0057" class="jq_tipo1">
@@ -1411,7 +1413,7 @@ son todas las partes tangibles del mismo; estos componentes se dividen en_______
                                     <option value="0" class="jq_incorrecta jq_pregunta0062">Textos de Consulta</option>
                                </select>
                                </fieldset> 
-						<!----------------------------------------------------------------------->
+						
                           <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0063" class="jq_tipo3">
                                 <legend>
@@ -1469,7 +1471,7 @@ son todas las partes tangibles del mismo; estos componentes se dividen en_______
                                     <option value="0" class="jq_incorrecta jq_pregunta0067">3.El narrador</option>
                                </select>
                                </fieldset>
-						<!---------------------------------->
+						
                         <br><hr size="3px" align="center" color="#2E9AFE"/>
                         <fieldset data-role="controlgroup" id="preg0068" class="jq_tipo1">
                                     <legend>
@@ -1551,82 +1553,83 @@ son todas las partes tangibles del mismo; estos componentes se dividen en_______
                     </div><!--/PREGUNTAS-->
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 13</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 13 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 14</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 14 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 15</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 15 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 16</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 16 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 17</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 17 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 18</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 18 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 19</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 19 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
                  <!--TEMA-->
-                <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-a">
+                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                    <!--<div class="ui-bar ui-bar-a">-->
                         <h3>TEMA 20</h3>
-                    </div>
+                    <!--</div>-->
                     <div class="ui-body ui-body-a">
                         <p>CONTENIDO DEL TEMA 20 BLA BLA BLA</p>
                     </div>
                 </div><!--/TEMA-->
-            </form>    
-            </div><!--/demo-html -->
+                
             
+            </form>
             <a href="../" data-rel="back" data-ajax="false" class="ui-btn ui-shadow ui-corner-all ui-mini ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-alt-icon ui-nodisc-icon">Regresar</a>
-    
+	       
+                 </form>
         </div><!-- /content -->
         <div data-role="footer" data-position="fixed">
             <h4>GUIAS HKS</h4>
@@ -1643,6 +1646,24 @@ son todas las partes tangibles del mismo; estos componentes se dividen en_______
                 </ul>
         </div>
         <!--/panel-->  
-    </div><!-- /pagina5-->     
+    </div><!-- /pagina5-->
+	
+	<!--POP PUP VENTANA-->
+	<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>TEMA:</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Calificación</h3>
+    <p>Número de preguntas:___.</p>
+	<p>Número de aciertos:___.</p>
+	<p>Calificación:____.</p>	
+		
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">No</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Si</a>
+    </div>
+</div><!--/POP PUP VENTANA-->
+
+
 </body>   
 </html>    

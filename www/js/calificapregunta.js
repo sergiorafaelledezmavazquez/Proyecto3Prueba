@@ -1,7 +1,7 @@
 //NOTA: Poner la clase de pregunta a cada fieldset
 //para filtrarlas y programar su JQUERY deacuerdo a su tipo
     $(document).ready(function(){
-        //tipo de pregunta de una sola opcion con option button (ejemplo pregunta 1 o pregunta18)
+        //tipo de pregunta 1 de una sola opcion con option button (ejemplo pregunta 1 o pregunta18)
         $("fieldset.jq_tipo1" + " .jq_correcta").click(function(event){ 
 			
             //0.0 obtengo elelemento al que se hizo clic 
@@ -53,7 +53,7 @@
             //3 inserto la imagen en el label (el id del labeles el mismo que el input)
                 $("." + event.target.id).empty().html(texto + '<img src="img/tache.png" class="mal">');   
         });
-        //tipo de pregunta de opcion multiple con checkbox (ejemplo pregunta 5)
+        //tipo de pregunta 2 de opcion multiple con checkbox (ejemplo pregunta 5)
         $("fieldset.jq_tipo2" + " .jq_correcta").click(function(event){ 
             //0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
@@ -98,7 +98,7 @@
                }
         });
     
-        //tipo de pregunta de una sola opcion con menu desplegable (ejemplo pregunta 24)
+        //tipo de pregunta 3 de una sola opcion con menu desplegable (ejemplo pregunta 24)
       $("fieldset.jq_tipo3" + " select ").change(function(event){ 
             //0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
@@ -116,9 +116,8 @@
                      parrafo.empty().html(texto+'<br>'+'<div align="center"><img src="img/tache.png" class="mal"></div>'); 
                  }         
          });
-		//tipo de pregunta donde se tienen ordenar los elementos con menu desplegable (ejemplo pregunta 41)
-		 
-		 $("fieldset.jq_tipo4" + " select ").change(function(event){ 
+		//tipo de pregunta 4 donde se tienen ordenar los elementos con menu desplegable (ejemplo pregunta 41)	 
+	  $("fieldset.jq_tipo4" + " select ").change(function(event){ 
             
 			//0.0 obtengo elelemento al que se hizo clic 
             $element = $(this);
@@ -143,4 +142,23 @@
                     parrafo.empty().html(texto + '<img src="img/tache.png" class="mal">'); 
                  }           
          });
+	  $("a.jq_boton_calificar").click(function(event){	
+	  		var nombres = [];
+		    var valores =[];
+	  		//$("#tema1 fieldset input[type=radio]:checked input[type=radio]:checked").each(function(){
+		      $("#tema1 fieldset :checked").each(function(){
+        		//alert('hola1');
+				//nombres.push($(this).data("nombre"));
+				//1.-introdusco los nombre de los elementos al arreglo
+				nombres.push($(this).attr('name'));
+				valores.push($(this).attr('value'));
+      		});
+		    //2.-imprimo el arreglo
+		    alert(nombres.join("\n") + "\n" + valores.join("\n")); 
+			console.log(nombres.join("\n"));
+		    //alert('hola2');
+     		
+	  });
+		
+		
 });
