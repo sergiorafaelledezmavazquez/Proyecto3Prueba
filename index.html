@@ -6,18 +6,19 @@
         <link rel="stylesheet" href="css/index.css"/>  
         <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.min.css" />
 	    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>       
-         <!--estilo de las letras con referencia a google -->
+        <!--estilo de las letras con referencia a google -->
         <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"> -->
         <script src="jquery.mobile/jquery.js"></script>
+	    <script src="js/main.js"></script>
         <script src="js/calificapregunta.js"></script>
         <script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
-	     <script src="js/main.js"></script>
 </head>    
 <body onload="onBodyLoad()"> 
 <!-- pagina1------------------------------------------------------------------------------------------------------------->     
     <div data-role="page" class="jqm-demos" id="panel-fixed-page1" data-title="Panel fixed positioning" data-url="panel-fixed-page1">
         <div data-role="header" data-position="fixed">
             <h1>MODULO 1</h1>
+			
             <a href="#nav-panel1" data-icon="bars" data-iconpos="notext">Menu</a>
         </div><!-- /header -->
         <div role="main" class="ui-content jqm-content jqm-fullwidth">
@@ -399,61 +400,52 @@
     <div data-role="page" class="jqm-demos" id="panel-fixed-page5" data-title="Panel fixed positioning" data-url="panel-fixed-page5">
         <div data-role="header" data-position="fixed">
             <h1>EXAMEN GLOBAL</h1>
+			<div class="jq_score" style="text-align: center;"></div>
             <a href="#nav-panel5" data-icon="bars" data-iconpos="notext">Menu</a>
         </div><!-- /header -->
         <div role="main" class="ui-content jqm-content jqm-fullwidth">
             <h1>MODULO 1: DE LA INFORMACION AL CONOCIMIENTO</h1>
             <div data-demo-html="#panel-fixed-page5">
                 <p style="text-align: center;">Este test es solo de preparación y su califiación no tiene validez oficial</p>
-                <form>
+                <form id="examen">
                 <h3 style="text-align: center;">UNIDAD 1</h3>    
-                <!--
-					<div data-role="collapsible">
-    				<h4>Heading</h4>
-    				<p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
-				    </div>
 				<!--TEMA-->	
-                <div data-role="collapsible" class="ui-corner-all custom-corners">
+                <div data-role="collapsible" class="ui-corner-all custom-corners jq_tema1_collapsible">
                     <!--<div class="ui-bar ui-bar-a">-->
-                        <h3 class="jq_tema1_titulo">TEMA: NECESIDADES, METAS, TOMA DE DECISIONES</h3>
+					<h3 class="jq_tituloTema" id="jq_t001_u001">TEMA: NECESIDADES, METAS, TOMA DE DECISIONES</h3>
                     <!--</div>-->
                     <div id="tema1" class="ui-body ui-body-a jq_tema1">
-                           <br><hr size="3px" align="center" color="#2E9AFE"/>
-						 <!--   -->
+                         <br><hr size="3px" align="center" color="#2E9AFE"/>
 						 <fieldset data-role="controlgroup" id="preg0001" class="jq_tipo1">
 							 <legend>¿Cuál es la razón por la que estudias el bachillerato?</legend>
-							 <input type="radio" name="pregunta0001" id="preg0001-opcion-a" value="0" class="jq_incorrecta jq_pregunta0001">
+							 <input type="radio" name="preg0001" id="preg0001-opcion-a" value="0" class="jq_incorrecta jq_pregunta0001 jq_t001 jq_u001">
 							 <label for="preg0001-opcion-a" class="preg0001-opcion-a">Quiero cambiar de trabajo.</label>
-							 <input type="radio" name="pregunta0001" id="preg0001-opcion-b" value="0" class="jq_incorrecta jq_pregunta0001">
+							 <input type="radio" name="preg0001" id="preg0001-opcion-b" value="0" class="jq_incorrecta jq_pregunta0001 jq_t001 jq_u001">
 							 <label for="preg0001-opcion-b" class="preg0001-opcion-b" >Recibir un mejor sueldo.</label>
-							 <input type="radio" name="pregunta0001" id="preg0001-opcion-c" value="1" class="jq_correcta jq_pregunta0001">
+							 <input type="radio" name="preg0001" id="preg0001-opcion-c" value="1" class="jq_correcta jq_pregunta0001 jq_t001 jq_u001">
 							 <label for="preg0001-opcion-c" class="preg0001-opcion-c">Ampliar mis conocimientos.</label>
 						 </fieldset>
 						 <br><hr size="3px" align="center" color="#2E9AFE"/>
-						 <!--   -->
-                           <fieldset data-role="controlgroup" id="preg0002" class="jq_tipo1">
-                                <legend><p style="text-align: justify;">__________________, es el proceso mediante el cual se realiza una elección entre las alternativas o formas para resolver diferentes situaciones de la vida, estas se pueden presentar en diferentes contextos. Este proceso nos permite alcanzar y disfrutar metas, examinar las diferentes opciones y considerar las consecuencias inmediatas.
-                                    (Wikipedia)</p>
-</legend>
-                                <input type="radio" name="pregunta0002" id="preg0002-opcion-a" value="0" class="jq_incorrecta jq_pregunta0002">
+						<fieldset data-role="controlgroup" id="preg0002" class="jq_tipo1">
+ 								<input type="radio" name="pregunta0002" id="preg0002-opcion-a" value="0" class="jq_incorrecta jq_pregunta0002 jq_t001 jq_u001">
 							    <label for="preg0002-opcion-a" class="preg0002-opcion-a">Votación</label>
                                 
-							    <input type="radio" name="pregunta0002" id="preg0002-opcion-b" value="1" class="jq_correcta jq_pregunta0002">
+							    <input type="radio" name="pregunta0002" id="preg0002-opcion-b" value="1" class="jq_correcta jq_pregunta0002 jq_t001 jq_u001">
                                 <label for="preg0002-opcion-b"  class="preg0002-opcion-b">Toma de decisiones</label>
-                                <input type="radio" name="pregunta0002" id="preg0002-opcion-c" value="0" class="jq_incorrecta jq_pregunta0002">
+                                <input type="radio" name="pregunta0002" id="preg0002-opcion-c" value="0" class="jq_incorrecta jq_pregunta0002 jq_t001 jq_u001">
                                 <label for="preg0002-opcion-c"  class="preg0002-opcion-c">Estilo de vida</label>
-                            </fieldset>
+ 						</fieldset>					
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
                            <fieldset data-role="controlgroup" id="preg0003" class="jq_tipo1">
                                 <legend><p style="text-align: justify;">___________________, son la parte del proceso de crecimiento personal que responde a las preguntas:
 ¿Qué pretendo? ¿Qué quiero aprender? ¿Para qué? ¿Por qué?
                                     ¿Qué formas de actuar, de pensar y de sentir voy a obtener como resultado de mis experiencias? ¿A dónde quiero llegar?</p>
 </legend>
-                                <input type="radio" name="pregunta0003" id="preg0003-opcion-a" value="1" class="jq_correcta jq_pregunta0003">
+                                <input type="radio" name="pregunta0003" id="preg0003-opcion-a" value="1" class="jq_correcta jq_pregunta0003 jq_t001 jq_u001">
                                 <label for="preg0003-opcion-a" class="preg0003-opcion-a">Las necesidades.</label>
-                                <input type="radio" name="pregunta0003" id="preg0003-opcion-b" value="0" class="jq_incorrecta jq_pregunta0003">
+                                <input type="radio" name="pregunta0003" id="preg0003-opcion-b" value="0" class="jq_incorrecta jq_pregunta0003 jq_t001 jq_u001">
                                 <label for="preg0003-opcion-b" class="preg0003-opcion-b">El dinero.</label>
-                                <input type="radio" name="pregunta0003" id="preg0003-opcion-c" value="0" class="jq_incorrecta jq_pregunta0003">
+                                <input type="radio" name="pregunta0003" id="preg0003-opcion-c" value="0" class="jq_incorrecta jq_pregunta0003 jq_t001 jq_u001">
                                 <label for="preg0003-opcion-c" class="preg0003-opcion-c">La religión.</label>
                            </fieldset>
                            <br><hr size="3px" align="center" color="#2E9AFE"/>
@@ -463,13 +455,13 @@
                                     <p style="text-align: justify; border: red 5px dotted;">
                                     <i>Es imprescindible que te prepares teóricamente para analizar las decisiones que otros toman porque, tal vez hasta ahora, otros piensan por ti, ven por ti, hablan por ti y deciden por ti. Que refrenes tu impulsividad, que no te dejes llevar por la primera acción que se te ocurra, que elijas entre varias alternativas, antes de escoger un camino. Que confrontes diversos puntos de vista, pues casi siempre un observador extraño puede ser más imparcial que tú mismo.</i></p><p style="text-align: justify;">De acuerdo con el  texto anterior, ¿qué puntos debe tomar en cuenta una persona para hacer frente al medio ambiente de una manera adecuada?</p>
                                </legend>                     
-                                <input type="checkbox" name="preg0005-opcion-a" id="preg0005-opcion-a" value="1" class="jq_correcta jq_pregunta0005">
+                                <input type="checkbox" name="preg0005-opcion-a" id="preg0005-opcion-a" value="1" class="jq_correcta jq_pregunta0005 jq_t001 jq_u001" >
                                 <label for="preg0005-opcion-a" class="preg0005-opcion-a">Es indispensable aprender a aprender, aprender a diagnosticar la realidad en la cual te mueves, existes y vives.</label>
-                                <input type="checkbox" name="preg0005-opcion-b" id="preg0005-opcion-b" value="1" class="jq_correcta jq_pregunta0005">
+                                <input type="checkbox" name="preg0005-opcion-b" id="preg0005-opcion-b" value="1" class="jq_correcta jq_pregunta0005 jq_t001 jq_u001" >
                                 <label for="preg0005-opcion-b" class="preg0005-opcion-b">Es imperioso que adquieras hábitos, actitudes y habilidades indispensables para una mejor toma de decisiones.</label>
-                                <input type="checkbox" name="preg0005-opcion-c" id="preg0005-opcion-c" value="0" class="jq_incorrecta jq_pregunta0005">
+                                <input type="checkbox" name="preg0005-opcion-c" id="preg0005-opcion-c" value="0" class="jq_incorrecta jq_pregunta0005 jq_t001 jq_u001" >
                                 <label for="preg0005-opcion-c" class="preg0005-opcion-c">Antes de llegar a una toma de posición crítica, a una decisión concreta, trata de leer más allá de todas las "líneas" que constituyan tu medio ambiente.</label>
-                                <input type="checkbox" name="preg0005-opcion-d" id="preg0005-opcion-d" value="0" class="jq_incorrecta jq_pregunta0005">
+                                <input type="checkbox" name="preg0005-opcion-d" id="preg0005-opcion-d" value="0" class="jq_incorrecta jq_pregunta0005 jq_t001 jq_u001" >
                                 <label for="preg0005-opcion-d" class="preg0005-opcion-d">Tu introspección debe partir de una  “observación cargada de teoría."</label>
 						         
                         </fieldset>
@@ -1654,14 +1646,14 @@ son todas las partes tangibles del mismo; estos componentes se dividen en_______
     <h1>Resultado</h1>
     </div>
     <div role="main" class="ui-content">
-		<h3 class="ui-title jq_titulotema">Tema</h3>
+		<h3 class="ui-title jq_mensajeTitulo">Tema</h3>
 		<p class="jq_numeroPreguntas">Cantidad de preguntas:</p>
 		<p class="jq_Reactivos">Cantidad de Reactivos:</p>
 		<p class="jq_ReactivosAcertados">Reactivos Acertados:</p>
 		<p class="jq_Calificacion">Calificación:</p>	
 		<p style="text-align:center;">¿Deseas guardar la calificación?</p>
         <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">No</a>
-        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b jq_guardar" data-rel="back" data-transition="flow">Si</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b jq_btnGuardar" data-rel="back" data-transition="flow">Si</a>
     </div>
 </div><!--/POP PUP VENTANA-->
 
