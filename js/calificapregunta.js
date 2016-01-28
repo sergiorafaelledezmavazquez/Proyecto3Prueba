@@ -207,10 +207,6 @@
 	 $(".jq_btnGuardar").click(function(event){	 
 		 alert("entro a guardar datos"); 
 		 guardaCalificacion();
-	 });	
-		
-		
-		
-		
+	 });			
 		
 });
