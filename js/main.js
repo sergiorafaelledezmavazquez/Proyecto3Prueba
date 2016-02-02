@@ -213,6 +213,7 @@
 						"glb_calificacion":glb_calificacion
 						};
 		 guardaCalificacion(obj_datos);
+		 $("div.jq_tema1_collapsible").collapsible({ collapsed: true });
 	 });			
 		
 });
@@ -224,6 +225,16 @@ var BD;
 var glb_datos;
 function onBodyLoad(){
 	document.addEventListener("deviceready", onDeviceReady, false);	
+	//XXXXXXXXXXX  probando el acceso a la variable examen   XXXXXXXXXXXXXXXX
+	alert(OBJ_Examen.array_unidades[2].nombre_unidad  +"\n" +
+		  OBJ_Examen.array_unidades[2].array_temas[10].nombre_tema +"\n" +
+		 OBJ_Examen.array_unidades[2].array_temas[10].array_preguntas[8].enunciado_pregunta+"\n" +
+		 OBJ_Examen.array_unidades[2].array_temas[10].array_preguntas[8].array_respuestas[0].enunciado_respuesta
+		 ); 
+	
+	
+	
+	
 }
 function onDeviceReady(){
 	alert("PhoneGap esta trabajando1"); 
@@ -261,9 +272,6 @@ function creaNuevaBD(tx){
 		"reactivosAcertados INTEGER, " + 
 		"calificacion INTEGER)";
 	tx.executeSql(sql);
-	/*//ejemplo de insertar
-	tx.executeSql("INSERT INTO tablaresultados (id,modulo,unidad,tema,preguntas,reactivos,reactivosacertados, 	  calificacion) VALUES (1,'De la información al conocimiento','1','NECESIDADES, METAS, TOMA DE 			DECISIONES',4,5,0,0)");
-	*/
 } 
 
 function creaSuccess(){
@@ -276,8 +284,6 @@ function errorBD(){
 }
 function guardaCalificacion(datos){
 	glb_datos = datos;
-	/*
-	alert("INSERT INTO tablaResultados (claveCalificacion,cantidadPreguntas,cantidadReactivos,reactivosAcertados, calificacion) VALUES ('0001_0002',5,5,5,100)");*/
 	
 	if (BD != null){
 	 	BD.transaction(agregarSQL,errorBD);
@@ -288,8 +294,8 @@ function agregarSQL(tx){
 var strSQL= "INSERT INTO tablaResultados (claveCalificacion,cantidadPreguntas,cantidadReactivos,reactivosAcertados, calificacion) VALUES ("+
 "'"+glb_datos.glb_ClaveCalificacion+"'"+","+glb_datos.glb_cantidadPreguntas+","+glb_datos.glb_cantidadReactivos+","+glb_datos.glb_reactivosAcertados+","+glb_datos.glb_calificacion+")";
  navigator.notification.alert(strSQL);
-tx.executeSql(strSQL);
-	//tx.executeSql(strSQL,[],agregarSQLSuccess,errorBD);	
+//tx.executeSql(strSQL);
+tx.executeSql(strSQL,[],agregarSQLSuccess,errorBD);	
 }
 function agregarSQLSuccess(){
 	navigator.notification.alert("Se ejecuto strSQL");
