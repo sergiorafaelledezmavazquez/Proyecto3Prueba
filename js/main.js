@@ -224,18 +224,22 @@ var existeBD;
 var BD;
 var glb_datos;
 function onBodyLoad(){
+	//Crear la interfaz de Examen 
 	document.addEventListener("deviceready", onDeviceReady, false);	
-	//XXXXXXXXXXX  probando el acceso a la variable examen   XXXXXXXXXXXXXXXX
-	alert(OBJ_Examen.array_unidades[2].nombre_unidad  +"\n" +
-		  OBJ_Examen.array_unidades[2].array_temas[10].nombre_tema +"\n" +
+	//console.log(OBJ_Examen);
+	alert(OBJ_Examen);
+	var ventana = new ClaseEstructuraVentanaExamen(OBJ_Examen);
+	ventana.cargar();
+	/*XXXXXXXXXXX  probando el acceso a la variable examen   XXXXXXXXXXXXXXXX
+	     alert(OBJ_Examen.array_unidades[2].nombre_unidad  +"\n" +
+		 OBJ_Examen.array_unidades[2].array_temas[10].nombre_tema +"\n" +
 		 OBJ_Examen.array_unidades[2].array_temas[10].array_preguntas[8].enunciado_pregunta+"\n" +
 		 OBJ_Examen.array_unidades[2].array_temas[10].array_preguntas[8].array_respuestas[0].enunciado_respuesta
 		 ); 
-	
-	
-	
-	
+	  
+	 */ 
 }
+
 function onDeviceReady(){
 	alert("PhoneGap esta trabajando1"); 
 	navigator.notification.alert("PhoneGap esta trabajando2");	

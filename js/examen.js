@@ -7,11 +7,13 @@ var OBJ_Examen = {
 					{'unidad':'u0001', //---<UNIDAD1>-----------------------------------
 					 'nombre_unidad':'APRENDER A LOGRAR METAS PERSONALES',
 					 'imagen_unidad':'imagen.png',
+					 'video':'video.mp4',
 					 'calificacion_unidad':'0',
 							 'array_temas':[ //--<array_temas>-------------------------				             
 											 {'tema':'t0001', //------<tema 1>-------- 
 											  'nombre_tema':'NECESIDADES, METAS, TOMA DE DECISIONES',
 											  'imagen_tema':'imagen.png',
+											  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -128,6 +130,7 @@ var OBJ_Examen = {
 								 			  {'tema':'t0002', //------<tema 2>-------- 
 											  'nombre_tema':'EL BACHILLERATO',
 											  'imagen_tema':'imagen.png',
+											   'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -424,9 +427,10 @@ var OBJ_Examen = {
 											  },//------</tema 3>-----------------
 								 
 								 
-											{'tema':'t0004', //------<tema 4>-------- 
+									{'tema':'t0004', //------<tema 4>-------- 
 											  'nombre_tema':'DIFERENCIA ENTRE INFORMACIÓN Y CONOCIMIENTO',
 											  'imagen_tema':'imagen.png',
+									          'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -827,9 +831,10 @@ var OBJ_Examen = {
 								 
 								 
 												  
-											 {'tema':'t0005', //------<tema 5>-------- 
+								{'tema':'t0005', //------<tema 5>-------- 
 											  'nombre_tema':'LAS INTELIGENCIAS MÚLTIPLES',
 											  'imagen_tema':'imagen.png',
+											  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -1011,9 +1016,10 @@ var OBJ_Examen = {
 											  },//------</tema 5>-----------------	  
 												  
 												  
-											{'tema':'t0006', //------<tema 6>-------- 
+									{'tema':'t0006', //------<tema 6>-------- 
 											  'nombre_tema':'EL BACHILLERATO',
 											  'imagen_tema':'imagen.png',
+									          'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -1044,9 +1050,10 @@ var OBJ_Examen = {
 												  
 												  
 												  
-											 {'tema':'t0007', //------<tema 7>-------- 
+								{'tema':'t0007', //------<tema 7>-------- 
 											  'nombre_tema':'EL ESTUDIO INDEPENDIENTE',
 											  'imagen_tema':'imagen.png',
+											  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -1159,9 +1166,10 @@ var OBJ_Examen = {
 											  },//------</tema 7>-----------------	
 												  
 												  
-											  {'tema':'t0008', //------<tema 8>-------- 
+								{'tema':'t0008', //------<tema 8>-------- 
 											  'nombre_tema':'ADMINISTRACIÓN DEL TIEMPO Y CONDICIONES IDEALES PARA EL ESTUDIO',
 											  'imagen_tema':'imagen.png',
+											  'video':'video.mp4', 
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -1314,9 +1322,10 @@ var OBJ_Examen = {
 											  },//------</tema 8>-----------------	  
 											
 												  
-											  {'tema':'t0009', //------<tema 9>-------- 
+								{'tema':'t0009', //------<tema 9>-------- 
 											  'nombre_tema':'LOS RECURSOS DIDÁCTICOS',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -1418,9 +1427,10 @@ var OBJ_Examen = {
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 9>-----------------
 												  
-											  {'tema':'t0010', //------<tema 10>-------- 
+								{'tema':'t0010', //------<tema 10>-------- 
 											  'nombre_tema':'EL EQUIPO DE CÓMPUTO COMO UN RECURSO DE APRENDIZAJE',
 											  'imagen_tema':'imagen.png',
+											   'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -2286,18 +2296,20 @@ var OBJ_Examen = {
 												  ]//--</array_preguntas>-----------------
 												   
 												   
-											  },//------</tema 10>-----------------	  												
+											  }//------</tema 10>-----------------	  												
 											  ]//--</array_temas>---------------------- 	  
 				    },//---</UNIDAD1>--------------------------------------------------
 	
 	{'unidad':'u0002', //---<UNIDAD2>--------------------------------------------------
 					 'nombre_unidad':'LEER Y ESCRIBIR PARA APRENDER',
 					 'imagen_unidad':'imagen.png',
+	 				 'video':'video.mp4',
 					 'calificacion_unidad':'0',
 							 'array_temas':[ //--<array_temas>-------------------------				             
 											 {'tema':'t0001', //------<tema 1>-------- 
 											  'nombre_tema':'TIPOS TEXTUALES Y SUS CARACTERÍSTICAS',
 											  'imagen_tema':'imagen.png',
+											  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -2836,6 +2848,7 @@ var OBJ_Examen = {
 								 {'tema':'t0002', //------<tema 2>-------- 
 											  'nombre_tema':'ELEMENTOS ESTRUCTURALES DEL TEXTO',
 											  'imagen_tema':'imagen.png',
+								  			'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -2910,7 +2923,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 2>-----------------
 								 
@@ -2918,6 +2931,7 @@ var OBJ_Examen = {
 								 {'tema':'t0003', //------<tema 3>-------- 
 											  'nombre_tema':'LAS PARTES DEL LIBRO',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -2966,7 +2980,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 												  
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 3>-----------------
@@ -2975,6 +2989,7 @@ var OBJ_Examen = {
 								 {'tema':'t0004', //------<tema 4>-------- 
 											  'nombre_tema':'EL PROCESO DE LECTURA',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -3274,7 +3289,7 @@ var OBJ_Examen = {
 														  },
 													     
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	 					
+											       } //</pregunta>------------------------------	 					
 					     						  ]//--</array_preguntas>-----------------
 											  },//------</tema 4>-----------------
 								 
@@ -3283,6 +3298,7 @@ var OBJ_Examen = {
 								 {'tema':'t0005', //------<tema 5>-------- 
 											  'nombre_tema':'EL RESUMEN',
 											  'imagen_tema':'imagen.png',
+								    			'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -3515,7 +3531,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'3,2,1'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 5>-----------------
@@ -3525,6 +3541,7 @@ var OBJ_Examen = {
 											  'nombre_tema':'LA SÍNTESIS',
 											  'imagen_tema':'imagen.png',
 											  'calificacion_tema':'0',
+								              'video':'video.mp4',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
 												  {'pregunta':'p0001',
@@ -3572,7 +3589,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 6>-----------------
 								 
@@ -3580,6 +3597,7 @@ var OBJ_Examen = {
 								 {'tema':'t0007', //------<tema 7>-------- 
 											  'nombre_tema':'LA COMPRENSIÓN DE LA LECTURA',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -3912,10 +3930,10 @@ var OBJ_Examen = {
 														  },
 													     
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 												  
 												  ]//--</array_preguntas>-----------------
-											  },//------</tema 7>-----------------
+											  }//------</tema 7>-----------------
 								 
 								 
 											  ]//--</array_temas>---------------------- 	  
@@ -3926,11 +3944,13 @@ var OBJ_Examen = {
 	{'unidad':'u0001', //---<UNIDAD3>-----------------------------------
 					 'nombre_unidad':'ANALIZAR Y ESCRIBIR PARA COMUNICAR',
 					 'imagen_unidad':'imagen.png',
+	                 'video':'video.mp4',
 					 'calificacion_unidad':'0',
 							 'array_temas':[ //--<array_temas>-------------------------				             
 											 {'tema':'t0001', //------<tema 1>-------- 
 											  'nombre_tema':'USO DE UNA ORTOGRAFÍA CORRECTA',
 											  'imagen_tema':'imagen.png',
+											  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -4093,7 +4113,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 1>-----------------
 								 
@@ -4102,6 +4122,7 @@ var OBJ_Examen = {
 								 {'tema':'t0001', //------<tema 2>-------- 
 											  'nombre_tema':'LA CORRECTA ACENTUACIÓN',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -4318,7 +4339,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 2>-----------------
 								 
@@ -4326,6 +4347,7 @@ var OBJ_Examen = {
 								{'tema':'t0001', //------<tema 3>-------- 
 											  'nombre_tema':'USO CORRECTO DE LOS SIGNOS DE PUNTUACIÓN',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -5118,7 +5140,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'Ninguna de las anteriores'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 								
 												  
 												  ]//--</array_preguntas>-----------------
@@ -5128,6 +5150,7 @@ var OBJ_Examen = {
 								 {'tema':'t0001', //------<tema 4>-------- 
 											  'nombre_tema':'EL USO CORRECTO DEL LÉXICO',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -5247,7 +5270,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 4>-----------------
 								 
@@ -5255,6 +5278,7 @@ var OBJ_Examen = {
 							{'tema':'t0005', //------<tema 5>-------- 
 											  'nombre_tema':'USO CORRECTO DE LA SINTÁXIS',
 											  'imagen_tema':'imagen.png',
+							                  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -5423,7 +5447,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 5>-----------------
 								 
@@ -5431,6 +5455,7 @@ var OBJ_Examen = {
 								  {'tema':'t0006', //------<tema 6>-------- 
 											  'nombre_tema':'EL COMENTARIO',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -5478,7 +5503,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 6>-----------------
 								 
@@ -5487,6 +5512,7 @@ var OBJ_Examen = {
 								 {'tema':'t0007', //------<tema 7>-------- 
 											  'nombre_tema':'EL PROCESO DE REDACCIÓN',
 											  'imagen_tema':'imagen.png',
+								              'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -5613,7 +5639,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'2,4,3,1'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 7>-----------------
 								 
@@ -5621,6 +5647,7 @@ var OBJ_Examen = {
 								 	{'tema':'t0008', //------<tema 8>-------- 
 											  'nombre_tema':'EL PROCESO DE ESCRITURA',
 											  'imagen_tema':'imagen.png',
+									          'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -5687,7 +5714,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 8>-----------------
 								 
@@ -5695,6 +5722,7 @@ var OBJ_Examen = {
 								   {'tema':'t0009', //------<tema 9>-------- 
 											  'nombre_tema':'LA RESEÑA',
 											  'imagen_tema':'imagen.png',
+									          'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -6052,7 +6080,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------	
+											       } //</pregunta>------------------------------	
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 9>-----------------
 								 
@@ -6060,6 +6088,7 @@ var OBJ_Examen = {
 								  {'tema':'t0010', //------<tema 10>-------- 
 											  'nombre_tema':'ELABORACIÓN DE FICHAS BIBLIOGRÁFICAS Y DE TRABAJO PARA LA INVESTIGACIÓN',
 											  'imagen_tema':'imagen.png',
+								   			  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -6283,7 +6312,7 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'De contenido'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 												  ]//--</array_preguntas>-----------------
 											  },//------</tema 10>-----------------
 								 
@@ -6291,6 +6320,7 @@ var OBJ_Examen = {
 								      {'tema':'t0011', //------<tema 11>-------- 
 											  'nombre_tema':'ACTITUDINAL',
 											  'imagen_tema':'imagen.png',
+									   		  'video':'video.mp4',
 											  'calificacion_tema':'0',
 											  'array_preguntas':[ //--<array_preguntas>-----------------
 												  //<pregunta>------------------------------------
@@ -6519,11 +6549,11 @@ var OBJ_Examen = {
 														  'enunciado_respuesta':'MMMMMMMMMMMMMMM'
 														  },
 													   ]//</array_respuestas>-------
-											       }, //</pregunta>------------------------------
+											       } //</pregunta>------------------------------
 												  ]//--</array_preguntas>-----------------
-											  },//------</tema 11>-----------------
+											  }//------</tema 11>-----------------
 											  ]//--</array_temas>---------------------- 	  
-				    },//---</UNIDAD3>--------------------------------------------------                
+				    }//---</UNIDAD3>--------------------------------------------------                
 	
 	
 				]//---</array_unidades>------------------------------------------------	
